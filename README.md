@@ -4,9 +4,9 @@
 
 ### Repository of independent deep learning projects I have completed
 
-##### Predicting U.N. World Happiness
+#### Predicting U.N. World Happiness
 
-[<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Folatorera.com%2F2020-world-happiness-report-top-20-happiest-cities-in-the-world%2F&psig=AOvVaw2swThxKoPNVJFQeCmZaO2I&ust=1618937409353000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDyuf_hivACFQAAAAAdAAAAABAb" width="200">](https://worldhappiness.report/)
+[<img src="https://olatorera.com/wp-content/uploads/2020/03/world-happiness-report.png" width="200">](https://worldhappiness.report/)
 
 <br>
 
@@ -26,9 +26,9 @@ Project files:
 *******************************************************
 
 
-### Predicting Covid-19 Using X-Ray Images
+#### Predicting Covid-19 Using X-Ray Images
 
-[<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs10489-020-01829-7&psig=AOvVaw00DtzFz3iHPC9cIOAd6bHu&ust=1618937957189000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiB8ILkivACFQAAAAAdAAAAABAD" width="200">](https://ieeexplore.ieee.org/abstract/document/9144185)
+[<img src="https://www.princeton.edu/sites/default/files/styles/scale_1440/public/images/2020/05/x-ray-image-2b_full.jpg?itok=2FO93vqG" width="200">](https://ieeexplore.ieee.org/abstract/document/9144185)
 
 <br>
 
