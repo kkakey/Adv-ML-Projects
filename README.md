@@ -52,7 +52,7 @@ Project files:
 
 #### Predicting Covid-19 Misinformation Tweets
 
-[<img src="https://www.docwirenews.com/wp-content/uploads/2021/01/GettyImages-1213869400.jpg" width="200">](https://www.sciencedirect.com/science/article/pii/S2468696420300458)
+[<img src="https://www.docwirenews.com/wp-content/uploads/2021/01/GettyImages-1213869400.jpg" width="350">](https://www.sciencedirect.com/science/article/pii/S2468696420300458)
 
 <br>
 
@@ -74,7 +74,7 @@ Project files:
 
 #### Flower Classifier
 
-[<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40bernardt.duvenhage%2Fpytorch-scholarship-challenge-from-facebook-flower-classifier-d3623a9fab7c&psig=AOvVaw3VSDXqe2XHSYQ4jE38Guqw&ust=1618974619583000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDfisvsi_ACFQAAAAAdAAAAABAD" width="200">](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
+[<img src="https://user-images.githubusercontent.com/16590868/69524725-064d5180-0f67-11ea-8e35-f4153513f379.png" width="200">](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
 
 <br>
 
