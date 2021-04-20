@@ -4,7 +4,9 @@
 
 ### Repository of independent deep learning projects I have completed
 
-#### Predicting U.N. World Happiness
+*******************************************************
+
+### Predicting U.N. World Happiness
 
 [<img src="https://olatorera.com/wp-content/uploads/2020/03/world-happiness-report.png" width="200">](https://worldhappiness.report/)
 
@@ -27,7 +29,7 @@ Project files:
 *******************************************************
 
 
-#### Predicting Covid-19 Using X-Ray Images
+### Predicting Covid-19 Using X-Ray Images
 
 [<img src="https://www.princeton.edu/sites/default/files/styles/scale_1440/public/images/2020/05/x-ray-image-2b_full.jpg?itok=2FO93vqG" width="200">](https://ieeexplore.ieee.org/abstract/document/9144185)
 
@@ -50,7 +52,7 @@ Project files:
 *******************************************************
 
 
-#### Predicting Covid-19 Misinformation Tweets
+### Predicting Covid-19 Misinformation Tweets
 
 [<img src="https://www.docwirenews.com/wp-content/uploads/2021/01/GettyImages-1213869400.jpg" width="350">](https://www.sciencedirect.com/science/article/pii/S2468696420300458)
 
@@ -72,7 +74,7 @@ Project files:
  *******************************************************
 
 
-#### Flower Classifier
+### Flower Classifier
 
 [<img src="https://user-images.githubusercontent.com/16590868/69524725-064d5180-0f67-11ea-8e35-f4153513f379.png" width="200">](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
 
