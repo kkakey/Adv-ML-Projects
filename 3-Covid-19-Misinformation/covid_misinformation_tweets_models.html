@@ -14264,7 +14264,15 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Creating a predictive model to classify misinformation is a first step in mitigating the spread of misinformation. Today with the ease to spread both information, as well as misinformation, it is necessary to try and stop the spread of misinformation sooner rather than later to prevent its rampant spread and harmful impacts. Particularly with regard to the Covid-19 pandemic, circulating misinformation could have a potential larger-scale impact on people's view of the virus and global health more broadly. Creating a classifier is an automated way to begin identifying and stopping the spread of misinformation, and hopefully, mitigtating the outspread of the Covid-19 pandemic.</p>
+<p>I create several classifiers to predict whether a tweet related to the Covid-19 pandemic is real or fake information.</p>
+<p>Data comes from Shahi's et al. 2021 stusy, "An exploratory study of covid-19 misinformation on twitter."</p>
+<p>Creating a predictive model to classify misinformation is a first step in mitigating the spread of misinformation. Today, it is easier than ever to spread both information and misinformation. It is necessary to try and stop the dissemination of misinformation sooner rather than later to prevent its rampant spread and harmful impacts. Particularly with regard to the Covid-19 pandemic, circulating misinformation could have a potential larger-scale impact on people's view of the virus and global health more broadly. Creating a classifier is an automated way to begin identifying and stopping the spread of misinformation, and hopefully, mitigtating the outspread of the Covid-19 pandemic.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://github.com/kkakey/adv_ml_projects/tree/main/3-Covid-19-Misinformation">Link</a> to project GitHub repo</p>
 
 </div>
 </div>
@@ -14275,7 +14283,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Source:Fighting an Infodemic: COVID-19 Fake News Dataset, https://github.com/diptamath/covid_fake_news,https://arxiv.org/abs/2011.03327 </span>
@@ -14300,7 +14308,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 
 
 
@@ -14410,7 +14418,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trainingdata</span><span class="p">[</span><span class="n">trainingdata</span><span class="o">.</span><span class="n">label</span><span class="o">==</span><span class="s2">&quot;real&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
@@ -14429,7 +14437,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
@@ -14453,7 +14461,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">trainingdata</span><span class="p">[</span><span class="n">trainingdata</span><span class="o">.</span><span class="n">label</span><span class="o">==</span><span class="s2">&quot;fake&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;tweet&#39;</span><span class="p">]</span>
@@ -14472,7 +14480,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -14495,7 +14503,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing.text</span> <span class="kn">import</span> <span class="n">Tokenizer</span>
@@ -14530,7 +14538,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># tokenize and pad X data</span>
@@ -14550,7 +14558,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -14592,7 +14600,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="n">SimpleRNN</span><span class="p">,</span> <span class="n">LSTM</span><span class="p">,</span> <span class="n">Embedding</span><span class="p">,</span> <span class="n">SimpleRNN</span><span class="p">,</span> <span class="n">Flatten</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Bidirectional</span><span class="p">,</span> <span class="n">BatchNormalization</span>
@@ -14615,7 +14623,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># performance metrics</span>
@@ -14659,7 +14667,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set seed for reproducibility</span>
@@ -14751,8 +14759,7 @@ Epoch 10/10
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -14767,9 +14774,8 @@ Epoch 10/10
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -14861,6 +14867,201 @@ Epoch 10/10
 <hr>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">set_seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+
+<span class="c1"># replace this model with the architectures from the task description</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">116</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="mi">40</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Flatten</span><span class="p">())</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">,</span><span class="s1">&#39;AUC&#39;</span><span class="p">])</span>
+
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+                    <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                    <span class="n">batch_size</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+                    <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Epoch 1/20
+206/206 [==============================] - 3s 8ms/step - loss: 0.5126 - acc: 0.7481 - auc: 0.8279 - val_loss: 0.2740 - val_acc: 0.8863 - val_auc: 0.9575
+Epoch 2/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.2017 - acc: 0.9230 - auc: 0.9797 - val_loss: 0.1990 - val_acc: 0.9198 - val_auc: 0.9733
+Epoch 3/20
+206/206 [==============================] - 1s 6ms/step - loss: 0.1130 - acc: 0.9599 - auc: 0.9933 - val_loss: 0.1757 - val_acc: 0.9299 - val_auc: 0.9765
+Epoch 4/20
+206/206 [==============================] - 1s 6ms/step - loss: 0.0759 - acc: 0.9695 - auc: 0.9971 - val_loss: 0.1703 - val_acc: 0.9283 - val_auc: 0.9761
+Epoch 5/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0438 - acc: 0.9871 - auc: 0.9989 - val_loss: 0.1742 - val_acc: 0.9338 - val_auc: 0.9747
+Epoch 6/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0298 - acc: 0.9896 - auc: 0.9990 - val_loss: 0.1781 - val_acc: 0.9322 - val_auc: 0.9756
+Epoch 7/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0198 - acc: 0.9944 - auc: 0.9997 - val_loss: 0.1931 - val_acc: 0.9315 - val_auc: 0.9690
+Epoch 8/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0161 - acc: 0.9952 - auc: 0.9996 - val_loss: 0.1917 - val_acc: 0.9346 - val_auc: 0.9730
+Epoch 9/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0118 - acc: 0.9973 - auc: 0.9991 - val_loss: 0.1999 - val_acc: 0.9346 - val_auc: 0.9717
+Epoch 10/20
+206/206 [==============================] - 1s 6ms/step - loss: 0.0052 - acc: 0.9992 - auc: 0.9998 - val_loss: 0.2124 - val_acc: 0.9322 - val_auc: 0.9683
+Epoch 11/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0034 - acc: 0.9997 - auc: 0.9998 - val_loss: 0.2280 - val_acc: 0.9330 - val_auc: 0.9673
+Epoch 12/20
+206/206 [==============================] - 1s 5ms/step - loss: 0.0024 - acc: 0.9999 - auc: 1.0000 - val_loss: 0.2357 - val_acc: 0.9268 - val_auc: 0.9670
+Epoch 13/20
+206/206 [==============================] - 1s 6ms/step - loss: 0.0017 - acc: 0.9997 - auc: 1.0000 - val_loss: 0.2541 - val_acc: 0.9268 - val_auc: 0.9610
+Epoch 14/20
+206/206 [==============================] - 1s 6ms/step - loss: 0.0010 - acc: 0.9999 - auc: 1.0000 - val_loss: 0.2626 - val_acc: 0.9221 - val_auc: 0.9625
+Epoch 15/20
+206/206 [==============================] - 1s 6ms/step - loss: 6.3529e-04 - acc: 1.0000 - auc: 1.0000 - val_loss: 0.2758 - val_acc: 0.9213 - val_auc: 0.9574
+Epoch 16/20
+206/206 [==============================] - 1s 6ms/step - loss: 4.0180e-04 - acc: 1.0000 - auc: 1.0000 - val_loss: 0.2914 - val_acc: 0.9198 - val_auc: 0.9569
+Epoch 17/20
+206/206 [==============================] - 1s 6ms/step - loss: 2.1502e-04 - acc: 1.0000 - auc: 1.0000 - val_loss: 0.3037 - val_acc: 0.9237 - val_auc: 0.9547
+Epoch 18/20
+206/206 [==============================] - 1s 6ms/step - loss: 8.2834e-05 - acc: 1.0000 - auc: 1.0000 - val_loss: 0.3167 - val_acc: 0.9237 - val_auc: 0.9520
+Epoch 19/20
+206/206 [==============================] - 1s 6ms/step - loss: 1.9696e-04 - acc: 1.0000 - auc: 1.0000 - val_loss: 0.3266 - val_acc: 0.9198 - val_auc: 0.9529
+Epoch 20/20
+206/206 [==============================] - 1s 6ms/step - loss: 1.0428e-04 - acc: 1.0000 - auc: 1.0000 - val_loss: 0.3555 - val_acc: 0.9167 - val_auc: 0.9454
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_eval_metrics</span><span class="p">(</span> <span class="n">y_test_labels</span><span class="p">,</span><span class="n">predicted_labels</span><span class="p">,</span><span class="n">classification</span><span class="o">=</span><span class="s2">&quot;TRUE&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>accuracy</th>
+      <th>f1_score</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>mse</th>
+      <th>rmse</th>
+      <th>mae</th>
+      <th>r2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.942056</td>
+      <td>0.941929</td>
+      <td>0.941929</td>
+      <td>0.941929</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14970,8 +15171,7 @@ Epoch 25/25
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -14986,9 +15186,8 @@ Epoch 25/25
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -15451,8 +15650,7 @@ Epoch 00025: ReduceLROnPlateau reducing learning rate to 0.001.
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -15467,9 +15665,8 @@ Epoch 00025: ReduceLROnPlateau reducing learning rate to 0.001.
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -15953,8 +16150,7 @@ WARNING:tensorflow:Learning rate reduction is conditioned on metric `AUC` which 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -15969,9 +16165,8 @@ WARNING:tensorflow:Learning rate reduction is conditioned on metric `AUC` which 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -16378,8 +16573,7 @@ Epoch 00050: auc did not improve from 1.00000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -16394,9 +16588,8 @@ Epoch 00050: auc did not improve from 1.00000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -16808,8 +17001,7 @@ Epoch 00050: auc did not improve from 1.00000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -16824,9 +17016,8 @@ Epoch 00050: auc did not improve from 1.00000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -17357,8 +17548,7 @@ Epoch 00020: auc did not improve from 1.00000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -17373,9 +17563,8 @@ Epoch 00020: auc did not improve from 1.00000
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -17634,8 +17823,7 @@ Epoch 00020: auc did not improve from 0.99999
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -17650,9 +17838,8 @@ Epoch 00020: auc did not improve from 0.99999
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -17896,8 +18083,7 @@ WARNING:tensorflow:Learning rate reduction is conditioned on metric `auc` which 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># format y_pred as labels </span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">predicted_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">y_test</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">y_pred</span><span class="p">]</span>
 </pre></div>
 
@@ -17912,9 +18098,8 @@ WARNING:tensorflow:Learning rate reduction is conditioned on metric `auc` which 
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># y_test is one hot encoded so we need to extract labels before runing model_eval_metrics()</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#extract labels from one hot encoded y_test object</span>
-<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="c1">#returns a pandas series of predicted labels</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_test_labels</span><span class="o">=</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">y_test_labels</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
