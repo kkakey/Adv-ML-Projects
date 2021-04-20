@@ -85,7 +85,7 @@ Project files:
 - Flower_Classifier.ipynb
   - Deep learning models predicting whether the classification of flowers
   - The best performing model for the three class classifier was the Squeezenet model, with an AUC of 0.99 and accuracy of 0.98.
-   - The same model archetecture performed well with classifying all 102 flower clases, with an AUC of 0.95 and accuracy of 0.57. The full dataset requires a large amount of GPU, but I plan to continue optimzing and training models to acheive better performance metrics.
+   - The same model archetecture performed well with classifying all 102 flower clases, with an AUC of 0.95 and accuracy of 0.57. The full dataset requires a large amount of GPU to train, but I plan to continue optimzing and training models to acheive better performance metrics.
 
 
 - Flower_Classifier.html
